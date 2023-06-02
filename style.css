@@ -24,9 +24,8 @@ i {
 }
 .container {
     border: 1px solid red;
-    max-width: 340px;
-    min-height: 500px;
-    margin: 0 auto;
+    width: 375px;
+    margin: 10px auto 10px;
     text-align: center;
     background-color: #fff;
     border-radius: 12px;
@@ -69,7 +68,8 @@ i {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 10px;
+    justify-content: center;
+    margin-left: 25px;
     margin-right: 10px;
     margin-bottom: 10px;
     margin-top: 30px;
@@ -83,12 +83,21 @@ i {
 
 .container section > a {
     display: flex;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     text-decoration: none;
-    border: 1px solid red;
+    color: var(--gray-100);
     width: 320px;
     padding: 8px 0 8px 2px;
     position: relative;
     left: 0;
-    
+    transition: .3s;
+}
+
+.container section > a:hover {
+    color: var(--gray-300);
+}
+
+.container section > a i:nth-child(2) {
+    margin-left: auto;
 }
