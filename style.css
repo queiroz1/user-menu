@@ -4,8 +4,9 @@
     --gray-300: #797085;
     --gray-400: #faeffa;
     --gray-500: #fdfcfe;
-    --bg-gradient: linear-gradient(#935fd3, #9245f1);
-    --red: #aa2222;
+    --bg-gradient: linear-gradient(to right, #FF0018, #FFA52C, #FFFF41, #008018, #0000F9, #86007D);
+    --red: #c51a1a;
+    --red-hover: #E50914;
 }
 
 * {
@@ -29,20 +30,22 @@ hr {
     color: var(--red);
 }
 .container {
-    border: 1px solid red;
+    border: 1px solid #ccc;
+    border-width: 1px 1px 4px 1px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    border-top: 2px solid #333333;
     width: 375px;
     margin: 10px auto 10px;
     text-align: center;
-    background-color: #fff;
-    border-radius: 12px;
+    background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+    transition: .2s;
 }
 
 .container header {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    margin-left: 24px;
-    margin-top: 24px;
+    margin: 24px 0 20px 24px;
   }
 
 .container header i {
@@ -80,10 +83,7 @@ hr {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-left: 25px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-top: 30px;
+    margin: 30px 10px 10px 25px;
     width: 327px;
     height: 96px;
 }
@@ -112,6 +112,10 @@ hr {
 
 .container section > a:hover {
     color: var(--gray-300);
+}
+
+.container section:last-child > a:last-child:hover {
+    color: var(--red-hover);
 }
 
 /* .container section > a:active {
